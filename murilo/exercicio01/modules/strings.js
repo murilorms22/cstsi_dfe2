@@ -9,7 +9,5 @@ export default function() {
   
   console.log(`O programa diz: ${mensagem}`);
   console.log(`O valor de PI é: ${Math.PI.toFixed(2)}`);
-
-
-
+  
 }  
