@@ -26,11 +26,4 @@ console.log(`NumerosOrd: ${numerosOrd}`);
 let numerosOrdRev = numerosOrd.reverse();
 console.log(`NumerosOrdRev: ${numerosOrdRev}`);
 
-console.log('\nExercício 03 - forEach');
-
-carros.forEach(imprimeCarros);
-function imprimeCarros(car) {
-  console.log(car)
-}
-
 }
