@@ -2,7 +2,7 @@
 
 #root {
   --orange: #ff7417;
-  --very-light-orange: #f99d60;
+  --very-light-orange: #e68342;
   --dark-orange: #be5d1d;
   --very-dark-orange: #602c09;
 }
@@ -15,7 +15,7 @@
 }
 
 .sidebar {
-  width: 16rem; 
+  width: 15rem; 
   height: 100vh;
   background: linear-gradient(to bottom, #f5741e, #ab4806);
   color: #fff;
@@ -44,14 +44,13 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem; 
 }
 
 .sidebar-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.25rem;
   cursor: pointer;
   transition: background-color 0.2s;

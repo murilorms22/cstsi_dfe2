@@ -1,17 +1,16 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faUserGroup, faBell, faEnvelope, faCalendar, faGear } from '@fortawesome/free-solid-svg-icons';
-import './Sidebar.css'; // Importe o arquivo CSS aqui
+import './Sidebar.css';
 
 function Sidebar() {
   return (
+      
     <div className="sidebar">
       <div className="sidebar-header">
-        {/* Logo */}
         GerenciaKids
       </div>
 
-      {/* Menu */}
       <nav className="sidebar-nav">
         <ul>
           <li className="sidebar-item">
