@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+#root {
+  display: flex;
+  width: 100vw;
+  --not-black: #232323;
+  --orange: #ff7417;
+  --light-orange: #e68342;
+  --dark-orange: #be5d1d;
+  --very-dark-orange: #602c09;
+}

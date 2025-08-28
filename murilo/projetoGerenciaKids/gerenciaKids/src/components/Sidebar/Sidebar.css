@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
-#root {
-  --orange: #ff7417;
-  --very-light-orange: #e68342;
-  --dark-orange: #be5d1d;
-  --very-dark-orange: #602c09;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +8,13 @@
 }
 
 .sidebar {
-  width: 15rem; 
+  width: 20%;
   height: 100vh;
   background: linear-gradient(to bottom, #f5741e, #ab4806);
   color: #fff;
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 
 .sidebar-header {
@@ -29,17 +23,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .sidebar-nav {
-  flex-grow: 1; 
+  flex-grow: 1;
   padding: 1rem;
 }
 
 .sidebar-nav ul {
-  list-style: none; 
+  list-style: none;
   padding: 0;
   margin: 0;
   display: flex;

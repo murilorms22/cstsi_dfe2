@@ -5,7 +5,7 @@ import './Sidebar.css';
 
 function Sidebar() {
   return (
-      
+
     <div className="sidebar">
       <div className="sidebar-header">
         GerenciaKids
@@ -26,12 +26,12 @@ function Sidebar() {
             <span>Avisos</span>
           </li>
           <li className="sidebar-item">
-            <FontAwesomeIcon icon={faEnvelope} />
-            <span>Mensagens</span>
-          </li>
-          <li className="sidebar-item">
             <FontAwesomeIcon icon={faCalendar} />
             <span>Agenda</span>
+          </li>
+          <li className="sidebar-item">
+            <FontAwesomeIcon icon={faEnvelope} />
+            <span>Mensagens</span>
           </li>
           <li className="sidebar-item">
             <FontAwesomeIcon icon={faGear} />
