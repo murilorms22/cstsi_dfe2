@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+
+
+</html>
+
+<script>
+
+let mockedListProducts = [
+  {
+    id_prod: 139,
+    nome: 'Cadeira Gamer Husky Gaming Hailstorm Blue',
+    descricao: 'Cadeira Gamer Husky Gaming Hailstorm, Preto e Azul, Com Almofadas, Reclinável, Descanso de Braço 2D - HHA-BB',
+    qtd_estoque: 250,
+    preco: 1249.9,
+    importado: false,
+    desconto: 20
+  },
+  {
+    id_prod: 140,
+    nome: 'Cadeira Gamer Husky Gaming Hailstorm 900',
+    descricao: ' Preto e Vermelho, Com Almofadas, Reclinável com Sistema Frog, Descanso de Braço 3D - HGMA085',
+    qtd_estoque: 130,
+    preco: 1449.9,
+    importado: false,
+    desconto: 5
+  },
+  {
+    id_prod: 141,
+    nome: 'Jogo Ghostwire: Tokyo, PS5',
+    descricao: 'Aproveite essa oportunidade e adquira seu Jogo Ghostwire: Tokyo, PS5 com Ray tracing e áudio 3D.',
+    qtd_estoque: 210,
+    preco: 264,
+    importado: true,
+    desconto: 15
+  }
+]
+
+function getIDsDesc(lista){
+  let IDs = [];
+
+  for (let i = 0; i < lista.length; i++){
+    let produto = lista[i];
+    IDs.push(produto.id_prod);
+  }
+
+  console.log(IDs.sort().reverse());
+}
+
+getIDsDesc(mockedListProducts);
+
+</script>
