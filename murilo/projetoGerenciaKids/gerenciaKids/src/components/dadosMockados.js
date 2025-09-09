@@ -1,4 +1,4 @@
-const dados = {
+const dadosMockados = {
   "escola": {
     "id_escola": 1,
     "nome": "EMEI Sonho de Criança"
@@ -178,3 +178,5 @@ const dados = {
     }
   ]
 }
+
+export default dadosMockados;

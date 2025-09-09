@@ -2,13 +2,18 @@ import React from 'react';
 import './Dashboard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faCalendarDay, faUsers, faEnvelopeOpenText, faBirthdayCake } from '@fortawesome/free-solid-svg-icons';
+import dadosMockados from '../dadosMockados';
+import BotaoLaranja from '../BotaoLaranja/BotaoLaranja';
+import CardGrande from '../CardGrande/CardGrande';
+
+const { professor, alunos, turma } = dadosMockados;
 
 function Dashboard() {
   return (
     <div className="painel-container">
       <header className="painel-cabecalho">
         <div>
-          <h1>Bem-vindo, Professor Murilo!</h1>
+          <h1>Bem-vindo, Professor {professor.nome}!</h1>
           <p>Painel de controle da turma 2025/1.</p>
         </div>
         <div>
@@ -36,56 +41,16 @@ function Dashboard() {
 
       <main className="conteudo-principal">
         <div className="conteudo-esquerda">
-          <div className="cartao">
-            <h2>Atividades do Dia</h2>
-            <ul className="lista-atividades">
-              <li className="item-atividade">
-                <FontAwesomeIcon icon={faCalendarDay} />
-                <div>
-                  <p className="titulo-atividade">Reunião com pais</p>
-                  <small className="acao-pequena">15:00h - Sala 3</small>
-                </div>
-              </li>
-              <li className="item-atividade">
-                <FontAwesomeIcon icon={faCalendarDay} />
-                <div>
-                  <p className="titulo-atividade">Dia do brinquedo</p>
-                  <small className="acao-pequena">Durante o turno</small>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="cartao">
-            <h2>Aniversariantes da Semana</h2>
-            <ul className="lista-aniversarios">
-              <li className="item-aniversario">
-                <FontAwesomeIcon icon={faBirthdayCake} />
-                <span>Maria (29/08)</span>
-              </li>
-              <li className="item-aniversario">
-                <FontAwesomeIcon icon={faBirthdayCake} />
-                <span>Pedro (30/08)</span>
-              </li>
-            </ul>
-          </div>
+          <CardGrande titulo="Atividades do dia" />
         </div>
 
         <div className="conteudo-direita">
           <div className="cartao">
             <h2>Ações Rápidas</h2>
             <div className="acoes-rapidas">
-              <button className="botao-acao">
-                <FontAwesomeIcon icon={faPlus} />
-                <span>Criar Aviso</span>
-              </button>
-              <button className="botao-acao">
-                <FontAwesomeIcon icon={faUsers} />
-                <span>Gerenciar Alunos</span>
-              </button>
-              <button className="botao-acao">
-                <FontAwesomeIcon icon={faEnvelopeOpenText} />
-                <span>Ler Mensagens</span>
-              </button>
+              <BotaoLaranja mensagem="Criar aviso" icone={faPlus} />
+              <BotaoLaranja mensagem="Gerenciar Alunos" icone={faUsers} />
+              <BotaoLaranja mensagem="Ler Mensagens" icone={faEnvelopeOpenText} />
             </div>
           </div>
         </div>
